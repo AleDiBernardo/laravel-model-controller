@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,17 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $data=[
-        'greetings' => "Laravel-Vite template",
-    ];
-    return view('home', $data);
-})->name('home');
-
-
-Route::get('/about', function () {
-    $data=[
-        'greetings' => "Laravel-Vite template",
-    ];
-    return view('about', $data);
-})->name('about');
+Route::get('/', [HomeController::class,'index'])->name('home');
