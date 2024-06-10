@@ -10,12 +10,25 @@ header {
     top: 0;
     width: 100%;
 
-    background-color: lightcyan;
-    // debug
+    background-color: black;
+    color: white;
+    
     height: $header-heigth;
     .container {
         @include flex(row, space-between, center);
         height: 100%;
+
+        .btn{
+            background-color: red;
+            font-size: 15px;
+            color: white;
+            border: none;
+
+            &:hover{
+                background-color: white;
+                color: red;
+            }
+        }
 
         .left-side {
             @include flex(row, space-between, center);
@@ -45,7 +58,7 @@ header {
                 }
                 .active {
                     // background-color: lightcoral;
-                    border-bottom: 2px solid blue;
+                    border-bottom: 2px solid red;
                 }
             }
         }

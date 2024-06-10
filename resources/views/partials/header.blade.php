@@ -11,7 +11,7 @@
         </div>
 
         <div>
-            <button class="btn btn-primary">Something</button>
+            <button class="btn fw-bold">Something</button>
         </div>
     </div>
 </header>

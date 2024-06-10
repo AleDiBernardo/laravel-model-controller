@@ -4,8 +4,9 @@
 footer{
     @include flex(row, center, center);
 
-    background-color: lightgreen;
-
+    border-top: 2px solid white;
+    background-color: black;
+    color: white;
     // debug
     height: 70px;
 }
