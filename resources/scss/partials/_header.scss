@@ -3,8 +3,9 @@
 
 
 header {
-    @include flex(row, space-between, center);
+    @include flex(row, left, center);
     position: fixed;
+    z-index: 9999;
     left: 0;
     top: 0;
     width: 100%;
